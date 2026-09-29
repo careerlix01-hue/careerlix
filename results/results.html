@@ -1,0 +1,2002 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Government Results 2026 - Careerlix</title>
+
+<meta name="description"
+content="Latest Government Exam Results 2026 - Check official results, marks, merit lists and result notices.">
+
+<link rel="stylesheet" href="../style.css">
+
+<style>
+
+/* =========================================================
+   RESULT PAGE
+========================================================= */
+
+.results-container {
+
+    max-width: 1200px;
+    margin: 35px auto;
+    padding: 0 20px;
+
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.page-intro {
+
+    text-align: center;
+    margin-bottom: 25px;
+
+}
+
+.page-intro h2 {
+
+    margin-bottom: 8px;
+
+}
+
+.page-intro p {
+
+    color: #666;
+    line-height: 1.6;
+
+}
+
+
+/* =========================================================
+   INFO BOX
+========================================================= */
+
+.info-box {
+
+    background: #fff8dc;
+
+    border-left: 5px solid #f1c40f;
+
+    padding: 15px 18px;
+
+    border-radius: 8px;
+
+    margin-bottom: 25px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   LEGEND
+========================================================= */
+
+.status-legend {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 30px;
+
+}
+
+.legend {
+
+    padding: 7px 13px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+.legend-upcoming {
+
+    background: #fff3cd;
+    color: #856404;
+
+}
+
+.legend-declared {
+
+    background: #d4edda;
+    color: #155724;
+
+}
+
+.legend-closed {
+
+    background: #f8d7da;
+    color: #721c24;
+
+}
+
+.legend-unknown {
+
+    background: #e9ecef;
+    color: #495057;
+
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.result-section {
+
+    margin-bottom: 45px;
+
+}
+
+.section-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    border-bottom: 2px solid #eee;
+
+    padding-bottom: 10px;
+
+    margin-bottom: 20px;
+
+}
+
+.section-heading h2 {
+
+    margin: 0;
+
+}
+
+.count {
+
+    background: #eee;
+
+    padding: 4px 10px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.result-grid {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.result-card {
+
+    background: #fff;
+
+    border: 1px solid #ddd;
+
+    border-radius: 14px;
+
+    padding: 20px;
+
+    box-shadow:
+    0 4px 15px rgba(0,0,0,.07);
+
+    transition: .2s ease;
+
+}
+
+.result-card:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.12);
+
+}
+
+.result-card h3 {
+
+    margin: 0 0 14px;
+
+    font-size: 18px;
+
+    line-height: 1.45;
+
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.status {
+
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+
+}
+
+.status-upcoming {
+
+    background: #fff3cd;
+    color: #856404;
+
+}
+
+.status-declared {
+
+    background: #d4edda;
+    color: #155724;
+
+}
+
+.status-closed {
+
+    background: #f8d7da;
+    color: #721c24;
+
+}
+
+.status-unknown {
+
+    background: #e9ecef;
+    color: #495057;
+
+}
+
+
+/* =========================================================
+   DETAILS
+========================================================= */
+
+.details {
+
+    background: #f8f9fa;
+
+    border-radius: 10px;
+
+    padding: 10px 14px;
+
+    margin-bottom: 15px;
+
+}
+
+.detail-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 8px 0;
+
+    border-bottom: 1px solid #e5e5e5;
+
+    font-size: 14px;
+
+}
+
+.detail-row:last-child {
+
+    border-bottom: none;
+
+}
+
+.detail-label {
+
+    font-weight: bold;
+
+    color: #444;
+
+}
+
+.detail-value {
+
+    text-align: right;
+
+    color: #555;
+
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.actions {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+}
+
+.btn {
+
+    display: inline-block;
+
+    padding: 9px 12px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+.official-btn {
+
+    background: #1267d6;
+    color: white;
+
+}
+
+.notice-btn {
+
+    background: #6f42c1;
+    color: white;
+
+}
+
+.result-btn {
+
+    background: #16823b;
+    color: white;
+
+}
+
+.upcoming-btn {
+
+    background: #f1c40f;
+    color: #222;
+
+}
+
+.closed-btn {
+
+    background: #d63031;
+    color: white;
+
+}
+
+.disabled-btn {
+
+    background: #adb5bd;
+    color: white;
+
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.empty {
+
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    padding: 20px;
+
+    background: #fafafa;
+
+    border: 1px dashed #ccc;
+
+    border-radius: 10px;
+
+    color: #666;
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:800px) {
+
+    .result-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media(max-width:520px) {
+
+    .actions {
+
+        flex-direction: column;
+
+    }
+
+    .btn {
+
+        width: 100%;
+
+        text-align: center;
+
+    }
+
+    .detail-row {
+
+        flex-direction: column;
+
+        gap: 3px;
+
+    }
+
+    .detail-value {
+
+        text-align: left;
+
+    }
+
+}
+
+</style>
+
+<link rel="canonical" href="https://www.careerlix.com/results/results.html">
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+
+<nav>
+
+    <div class="logo">
+
+        <img
+        src="../logo.png"
+        alt="Careerlix Logo">
+
+        <span>Careerlix</span>
+
+    </div>
+
+
+    <ul>
+
+        <li>
+            <a href="../index.html">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="../jobs.html">
+                Jobs
+            </a>
+        </li>
+
+        <li>
+            <a href="../admit-cards/admit-cards.html">
+                Admit Cards
+            </a>
+        </li>
+
+        <li>
+            <a href="results.html">
+                Results
+            </a>
+        </li>
+
+        <li>
+            <a href="../notifications/notifications.html">
+                Notifications
+            </a>
+        </li>
+
+        <li>
+            <a href="../legal/about.html">
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="../legal/contact.html">
+                Contact
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero">
+
+    <h1>
+        📊 Government Results 2026
+    </h1>
+
+    <p>
+        Latest Results • Marks • Merit Lists • Official Result Links
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main class="results-container">
+
+
+    <div class="page-intro">
+
+        <h2>
+            Latest Government Exam Results
+        </h2>
+
+        <p>
+            Check the latest government examination results,
+            marks, merit lists and official result notices.
+        </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         IMPORTANT INFORMATION
+    ===================================================== -->
+
+    <div class="info-box">
+
+        <strong>Important:</strong>
+
+        Always verify your result, roll number,
+        marks and selection status from the concerned
+        official recruitment authority.
+
+        <br><br>
+
+        🟡 Upcoming = Result expected / not declared
+
+        <br>
+
+        🟢 Result Declared = Official result available
+
+        <br>
+
+        🔴 Closed = Previous result update
+
+        <br>
+
+        ⚪ Not Confirmed = Official result date not confirmed
+
+    </div>
+
+
+    <!-- =====================================================
+         LEGEND
+    ===================================================== -->
+
+    <div class="status-legend">
+
+        <span class="legend legend-upcoming">
+            🟡 Upcoming
+        </span>
+
+        <span class="legend legend-declared">
+            🟢 Result Declared
+        </span>
+
+        <span class="legend legend-closed">
+            🔴 Previous / Closed
+        </span>
+
+        <span class="legend legend-unknown">
+            ⚪ Date Not Confirmed
+        </span>
+
+    </div>
+
+
+    <!-- =====================================================
+         1. UPCOMING
+         IMPORTANT:
+         THIS SECTION IS FIRST
+    ===================================================== -->
+
+    <section class="result-section">
+
+        <div class="section-heading">
+
+            <h2>
+                🟡 Upcoming Results
+            </h2>
+
+            <span
+            id="upcomingCount"
+            class="count">
+                0
+            </span>
+
+        </div>
+
+        <div
+        id="upcoming"
+        class="result-grid">
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         2. DECLARED
+    ===================================================== -->
+
+    <section class="result-section">
+
+        <div class="section-heading">
+
+            <h2>
+                🟢 Result Declared
+            </h2>
+
+            <span
+            id="declaredCount"
+            class="count">
+                0
+            </span>
+
+        </div>
+
+        <div
+        id="declared"
+        class="result-grid">
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         3. CLOSED
+    ===================================================== -->
+
+    <section class="result-section">
+
+        <div class="section-heading">
+
+            <h2>
+                🔴 Previous / Closed
+            </h2>
+
+            <span
+            id="closedCount"
+            class="count">
+                0
+            </span>
+
+        </div>
+
+        <div
+        id="closed"
+        class="result-grid">
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         4. NOT CONFIRMED
+    ===================================================== -->
+
+    <section class="result-section">
+
+        <div class="section-heading">
+
+            <h2>
+                ⚪ Date Not Confirmed
+            </h2>
+
+            <span
+            id="unknownCount"
+            class="count">
+                0
+            </span>
+
+        </div>
+
+        <div
+        id="unknown"
+        class="result-grid">
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <h3>
+        Careerlix
+    </h3>
+
+    <p>
+        Your Gateway to Opportunities
+    </p>
+
+    <p>
+
+        <a href="../legal/about.html">
+            About Us
+        </a>
+
+        |
+
+        <a href="../legal/contact.html">
+            Contact Us
+        </a>
+
+        |
+
+        <a href="../legal/privacy-policy.html">
+            Privacy Policy
+        </a>
+
+        |
+
+        <a href="../legal/disclaimer.html">
+            Disclaimer
+        </a>
+
+        |
+
+        <a href="../legal/terms-and-conditions.html">
+            Terms & Conditions
+        </a>
+
+    </p>
+
+    <p>
+        © 2026 Careerlix. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script>
+
+/* =========================================================
+   RESULT MASTER DATA
+========================================================= */
+
+const results = [
+
+    {
+        title:
+        "BPSC Auditor Pre Result 2026 - Out",
+
+        status:
+        "declared",
+
+        examDate:
+        "2026-07-12",
+
+        resultDate:
+        "2026-08-22",
+
+        official:
+        "https://bpsc.bihar.gov.in/",
+
+        notice:
+        "https://bpsc.bihar.gov.in/",
+
+        result:
+        "https://bpsc.bihar.gov.in/"
+    },
+
+
+    {
+        title:
+        "RBI Officer Grade B Phase-II Result 2026 - Out",
+
+        status:
+        "declared",
+
+        examDate:
+        "2026-08-01",
+
+        resultDate:
+        "2026-08-22",
+
+        official:
+        "https://www.rbi.org.in/",
+
+        notice:
+        "https://www.rbi.org.in/",
+
+        result:
+        "https://opportunities.rbi.org.in/"
+    },
+
+
+    {
+        title:
+        "Haryana HTET Score Card 2026 - Out",
+
+        status:
+        "declared",
+
+        examDate:
+        "2026-07-26",
+
+        resultDate:
+        "2026-08-20",
+
+        official:
+        "https://bseh.org.in/",
+
+        notice:
+        "https://bseh.org.in/",
+
+        result:
+        "https://bseh.org.in/"
+    },
+
+
+    {
+        title:
+        "UPSC CDS II Final Result 2026",
+
+        status:
+        "upcoming",
+
+        examDate:
+        "2026-09-13",
+
+        resultDate:
+        null,
+
+        official:
+        "https://upsc.gov.in/",
+
+        notice:
+        "https://upsc.gov.in/",
+
+        result:
+        "https://upsc.gov.in/"
+    },
+
+
+    {
+        title:
+        "IIT JAM Final Result 2026",
+
+        status:
+        "declared",
+
+        examDate:
+        "2026-02-15",
+
+        resultDate:
+        "2026-03-20",
+
+        official:
+        "https://jam2026.iitb.ac.in/",
+
+        notice:
+        "https://jam2026.iitb.ac.in/",
+
+        result:
+        "https://jam2026.iitb.ac.in/"
+    },
+
+
+    {
+        title:
+        "SSC JE Engineer Final Result / Marks 2026 - Out",
+
+        status:
+        "declared",
+
+        examDate:
+        "2026-01-20",
+
+        resultDate:
+        "2026-08-05",
+
+        official:
+        "https://ssc.gov.in/",
+
+        notice:
+        "https://ssc.gov.in/",
+
+        result:
+        "https://ssc.gov.in/"
+    },
+
+
+    {
+        title:
+        "Delhi DSSSB Various Posts Result 2026",
+
+        status:
+        "declared",
+
+        examDate:
+        null,
+
+        resultDate:
+        "2026-08-18",
+
+        official:
+        "https://dsssb.delhi.gov.in/",
+
+        notice:
+        "https://dsssb.delhi.gov.in/results",
+
+        result:
+        "https://dsssb.delhi.gov.in/results"
+    },
+
+
+    {
+        title:
+        "RPSC School Lecturer PGT Result 2026 - Updated",
+
+        status:
+        "declared",
+
+        examDate:
+        null,
+
+        resultDate:
+        "2026-08-18",
+
+        official:
+        "https://rpsc.rajasthan.gov.in/",
+
+        notice:
+        "https://rpsc.rajasthan.gov.in/results",
+
+        result:
+        "https://rpsc.rajasthan.gov.in/results"
+    },
+
+
+    {
+        title:
+        "UP DElEd 2026 Allotment Result",
+
+        status:
+        "declared",
+
+        examDate:
+        null,
+
+        resultDate:
+        "2026-08-21",
+
+        official:
+        "https://updeled.gov.in/",
+
+        notice:
+        "https://updeled.gov.in/",
+
+        result:
+        "https://updeled.gov.in/"
+    },
+
+
+    {
+        title:
+        "UPSSSC Junior Assistant 09/2022 Final Result 2026",
+
+        status:
+        "declared",
+
+        examDate:
+        null,
+
+        resultDate:
+        "2026-08-20",
+
+        official:
+        "https://upsssc.gov.in/",
+
+        notice:
+        "https://upsssc.gov.in/",
+
+        result:
+        "https://upsssc.gov.in/"
+    },
+
+
+    {
+        title:
+        "HPSC PGT Computer Science Final Result 2026",
+
+        status:
+        "declared",
+
+        examDate:
+        null,
+
+        resultDate:
+        "2026-08-18",
+
+        official:
+        "https://hpsc.gov.in/",
+
+        notice:
+        "https://hpsc.gov.in/",
+
+        result:
+        "https://hpsc.gov.in/"
+    },
+
+
+    {
+        title:
+        "NEET UG 2026 1st Round Allotment Result - Out",
+
+        status:
+        "declared",
+
+        examDate:
+        "2026-05-03",
+
+        resultDate:
+        "2026-08-18",
+
+        official:
+        "https://mcc.nic.in/",
+
+        notice:
+        "https://mcc.nic.in/",
+
+        result:
+        "https://mcc.nic.in/"
+    },
+
+
+    {
+        title:
+        "UPSSSC Pharmacist Final Answer Key 2026 - Out",
+
+        status:
+        "declared",
+
+        examDate:
+        null,
+
+        resultDate:
+        "2026-08-19",
+
+        official:
+        "https://upsssc.gov.in/",
+
+        notice:
+        "https://upsssc.gov.in/",
+
+        result:
+        "https://upsssc.gov.in/"
+    },
+
+
+    {
+        title:
+        "RPSC Rajasthan Police SI Telecom Final Result 2026",
+
+        status:
+        "declared",
+
+        examDate:
+        null,
+
+        resultDate:
+        "2026-08-18",
+
+        official:
+        "https://rpsc.rajasthan.gov.in/",
+
+        notice:
+        "https://rpsc.rajasthan.gov.in/results",
+
+        result:
+        "https://rpsc.rajasthan.gov.in/results"
+    },
+
+
+    {
+        title:
+        "NTA SWAYAM Result / Score Card 2026 - Out",
+
+        status:
+        "declared",
+
+        examDate:
+        null,
+
+        resultDate:
+        "2026-08-18",
+
+        official:
+        "https://exams.nta.nic.in/swayam/",
+
+        notice:
+        "https://exams.nta.nic.in/swayam/",
+
+        result:
+        "https://exams.nta.nic.in/swayam/"
+    },
+
+
+    {
+        title:
+        "Bihar Police Prohibition Constable Result 2026",
+
+        status:
+        "declared",
+
+        examDate:
+        null,
+
+        resultDate:
+        "2026-08-18",
+
+        official:
+        "https://csbc.bihar.gov.in/",
+
+        notice:
+        "https://csbc.bihar.gov.in/",
+
+        result:
+        "https://csbc.bihar.gov.in/"
+    },
+
+
+    {
+        title:
+        "Bihar Police CSBC Constable Operator Result 2026 - Out",
+
+        status:
+        "declared",
+
+        examDate:
+        null,
+
+        resultDate:
+        "2026-08-18",
+
+        official:
+        "https://csbc.bihar.gov.in/",
+
+        notice:
+        "https://csbc.bihar.gov.in/",
+
+        result:
+        "https://csbc.bihar.gov.in/"
+    },
+
+
+    {
+        title:
+        "Bihar Police CSBC Constable GD Result 2026 - Out",
+
+        status:
+        "declared",
+
+        examDate:
+        null,
+
+        resultDate:
+        "2026-08-18",
+
+        official:
+        "https://csbc.bihar.gov.in/",
+
+        notice:
+        "https://csbc.bihar.gov.in/",
+
+        result:
+        "https://csbc.bihar.gov.in/"
+    },
+
+
+    {
+        title:
+        "KVS NVS Teaching & Non-Teaching Tier-II Result 2026 - Out",
+
+        status:
+        "declared",
+
+        examDate:
+        null,
+
+        resultDate:
+        "2026-08-18",
+
+        official:
+        "https://kvsangathan.nic.in/",
+
+        notice:
+        "https://kvsangathan.nic.in/",
+
+        result:
+        "https://kvsangathan.nic.in/"
+    }
+
+];
+
+
+/* =========================================================
+   DATE FUNCTION
+========================================================= */
+
+function parseDate(dateString) {
+
+    if (!dateString) {
+
+        return null;
+
+    }
+
+    return new Date(
+        dateString + "T00:00:00"
+    );
+
+}
+
+
+/* =========================================================
+   FORMAT DATE
+========================================================= */
+
+function formatDate(dateString) {
+
+    if (!dateString) {
+
+        return "Not Announced";
+
+    }
+
+    return parseDate(
+        dateString
+    ).toLocaleDateString(
+        "en-IN",
+        {
+            day: "2-digit",
+            month: "2-digit",
+            year: "numeric"
+        }
+    );
+
+}
+
+
+/* =========================================================
+   STATUS INFO
+========================================================= */
+
+function statusInfo(status) {
+
+    switch (status) {
+
+        case "upcoming":
+
+            return {
+
+                text:
+                "🟡 Result Upcoming",
+
+                className:
+                "status-upcoming"
+
+            };
+
+
+        case "declared":
+
+            return {
+
+                text:
+                "🟢 Result Declared",
+
+                className:
+                "status-declared"
+
+            };
+
+
+        case "closed":
+
+            return {
+
+                text:
+                "🔴 Previous / Closed",
+
+                className:
+                "status-closed"
+
+            };
+
+
+        default:
+
+            return {
+
+                text:
+                "⚪ Date Not Confirmed",
+
+                className:
+                "status-unknown"
+
+            };
+
+    }
+
+}
+
+
+/* =========================================================
+   RESULT BUTTON
+========================================================= */
+
+function resultButton(item) {
+
+    if (
+        item.status ===
+        "declared"
+    ) {
+
+        return `
+
+            <a
+                href="${item.result}"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn result-btn"
+            >
+
+                📊 Check Result
+
+            </a>
+
+        `;
+
+    }
+
+
+    if (
+        item.status ===
+        "upcoming"
+    ) {
+
+        return `
+
+            <span
+                class="btn upcoming-btn"
+            >
+
+                🟡 Result Coming Soon
+
+            </span>
+
+        `;
+
+    }
+
+
+    if (
+        item.status ===
+        "closed"
+    ) {
+
+        return `
+
+            <span
+                class="btn closed-btn"
+            >
+
+                🔴 Previous Result
+
+            </span>
+
+        `;
+
+    }
+
+
+    return `
+
+        <span
+            class="btn disabled-btn"
+        >
+
+            ⚪ Date Not Confirmed
+
+        </span>
+
+    `;
+
+}
+
+
+/* =========================================================
+   CREATE CARD
+========================================================= */
+
+function createCard(item) {
+
+    const info =
+        statusInfo(
+            item.status
+        );
+
+
+    const card =
+        document.createElement(
+            "article"
+        );
+
+
+    card.className =
+        "result-card";
+
+
+    card.innerHTML = `
+
+        <h3>
+            ${item.title}
+        </h3>
+
+
+        <div
+            class="status ${info.className}"
+        >
+
+            ${info.text}
+
+        </div>
+
+
+        <div class="details">
+
+
+            <div class="detail-row">
+
+                <span class="detail-label">
+
+                    📅 Exam Date
+
+                </span>
+
+                <span class="detail-value">
+
+                    ${formatDate(
+                        item.examDate
+                    )}
+
+                </span>
+
+            </div>
+
+
+            <div class="detail-row">
+
+                <span class="detail-label">
+
+                    📊 Result Date
+
+                </span>
+
+                <span class="detail-value">
+
+                    ${formatDate(
+                        item.resultDate
+                    )}
+
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="actions">
+
+
+            <a
+                href="${item.official}"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn official-btn"
+            >
+
+                🌐 Official Website
+
+            </a>
+
+
+            <a
+                href="${item.notice}"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn notice-btn"
+            >
+
+                📄 Official Notice
+
+            </a>
+
+
+            ${resultButton(item)}
+
+        </div>
+
+    `;
+
+
+    return card;
+
+}
+
+
+/* =========================================================
+   EMPTY MESSAGE
+========================================================= */
+
+function emptyMessage(text) {
+
+    const div =
+        document.createElement(
+            "div"
+        );
+
+
+    div.className =
+        "empty";
+
+
+    div.textContent =
+        text;
+
+
+    return div;
+
+}
+
+
+/* =========================================================
+   SORT FUNCTION
+========================================================= */
+
+function sortByDate(
+    array,
+    dateField,
+    ascending = false
+) {
+
+    array.sort(
+        (a, b) => {
+
+            const dateA =
+                parseDate(
+                    a[dateField]
+                );
+
+            const dateB =
+                parseDate(
+                    b[dateField]
+                );
+
+
+            if (!dateA && !dateB) {
+
+                return 0;
+
+            }
+
+
+            if (!dateA) {
+
+                return 1;
+
+            }
+
+
+            if (!dateB) {
+
+                return -1;
+
+            }
+
+
+            return ascending
+                ? dateA - dateB
+                : dateB - dateA;
+
+        }
+    );
+
+}
+
+
+/* =========================================================
+   RENDER
+========================================================= */
+
+function renderResults() {
+
+
+    /*
+       Separate all categories
+    */
+
+    const upcoming =
+        results.filter(
+            item =>
+            item.status ===
+            "upcoming"
+        );
+
+
+    const declared =
+        results.filter(
+            item =>
+            item.status ===
+            "declared"
+        );
+
+
+    const closed =
+        results.filter(
+            item =>
+            item.status ===
+            "closed"
+        );
+
+
+    const unknown =
+        results.filter(
+            item =>
+            item.status !==
+            "upcoming" &&
+            item.status !==
+            "declared" &&
+            item.status !==
+            "closed"
+        );
+
+
+    /*
+       UPCOMING:
+       Nearest relevant date first
+    */
+
+    sortByDate(
+        upcoming,
+        "examDate",
+        true
+    );
+
+
+    /*
+       DECLARED:
+       Latest result first
+    */
+
+    sortByDate(
+        declared,
+        "resultDate",
+        false
+    );
+
+
+    /*
+       CLOSED:
+       Latest result first
+    */
+
+    sortByDate(
+        closed,
+        "resultDate",
+        false
+    );
+
+
+    /*
+       UNKNOWN:
+       Alphabetical
+    */
+
+    unknown.sort(
+        (a, b) =>
+        a.title.localeCompare(
+            b.title
+        )
+    );
+
+
+    /*
+       Get containers
+    */
+
+    const upcomingBox =
+        document.getElementById(
+            "upcoming"
+        );
+
+
+    const declaredBox =
+        document.getElementById(
+            "declared"
+        );
+
+
+    const closedBox =
+        document.getElementById(
+            "closed"
+        );
+
+
+    const unknownBox =
+        document.getElementById(
+            "unknown"
+        );
+
+
+    /*
+       Clear old cards
+    */
+
+    upcomingBox.innerHTML = "";
+
+    declaredBox.innerHTML = "";
+
+    closedBox.innerHTML = "";
+
+    unknownBox.innerHTML = "";
+
+
+    /*
+       Render Upcoming FIRST
+    */
+
+    upcoming.forEach(
+        item => {
+
+            upcomingBox.appendChild(
+                createCard(item)
+            );
+
+        }
+    );
+
+
+    /*
+       Render Declared SECOND
+    */
+
+    declared.forEach(
+        item => {
+
+            declaredBox.appendChild(
+                createCard(item)
+            );
+
+        }
+    );
+
+
+    /*
+       Render Closed THIRD
+    */
+
+    closed.forEach(
+        item => {
+
+            closedBox.appendChild(
+                createCard(item)
+            );
+
+        }
+    );
+
+
+    /*
+       Render Not Confirmed FOURTH
+    */
+
+    unknown.forEach(
+        item => {
+
+            unknownBox.appendChild(
+                createCard(item)
+            );
+
+        }
+    );
+
+
+    /*
+       Empty states
+    */
+
+    if (
+        upcoming.length === 0
+    ) {
+
+        upcomingBox.appendChild(
+
+            emptyMessage(
+                "No upcoming result updates."
+            )
+
+        );
+
+    }
+
+
+    if (
+        declared.length === 0
+    ) {
+
+        declaredBox.appendChild(
+
+            emptyMessage(
+                "No result has been declared."
+            )
+
+        );
+
+    }
+
+
+    if (
+        closed.length === 0
+    ) {
+
+        closedBox.appendChild(
+
+            emptyMessage(
+                "No previous or closed results."
+            )
+
+        );
+
+    }
+
+
+    if (
+        unknown.length === 0
+    ) {
+
+        unknownBox.appendChild(
+
+            emptyMessage(
+                "No result date is currently unconfirmed."
+            )
+
+        );
+
+    }
+
+
+    /*
+       Counts
+    */
+
+    document.getElementById(
+        "upcomingCount"
+    ).textContent =
+        upcoming.length;
+
+
+    document.getElementById(
+        "declaredCount"
+    ).textContent =
+        declared.length;
+
+
+    document.getElementById(
+        "closedCount"
+    ).textContent =
+        closed.length;
+
+
+    document.getElementById(
+        "unknownCount"
+    ).textContent =
+        unknown.length;
+
+}
+
+
+/* =========================================================
+   INITIAL LOAD
+========================================================= */
+
+renderResults();
+
+
+/* =========================================================
+   AUTO REFRESH
+========================================================= */
+
+setInterval(
+    renderResults,
+    5 * 60 * 1000
+);
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>International Government Jobs - Careerlix</title>
+
+<meta name="description"
+content="Explore government job opportunities across major countries through Careerlix.">
+
+<link rel="stylesheet" href="../../style.css">
+
+<link rel="icon" href="../../logo.png">
+
+
+<style>
+
+/* =========================================================
+   INTERNATIONAL GOVERNMENT JOBS - HERO
+   ========================================================= */
+
+.gov-hero {
+
+    background: linear-gradient(135deg, #0d6efd, #063b8f);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+}
+
+.gov-hero h1 {
+
+    font-size: 42px;
+
+    margin-bottom: 15px;
+
+}
+
+.gov-hero p {
+
+    font-size: 18px;
+
+    max-width: 850px;
+
+    margin: auto;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+   ========================================================= */
+
+.gov-container {
+
+    max-width: 1200px;
+
+    margin: 50px auto;
+
+    padding: 0 20px;
+
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.gov-intro {
+
+    text-align: center;
+
+    margin-bottom: 45px;
+
+}
+
+.gov-intro h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 12px;
+
+}
+
+.gov-intro p {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    color: #555;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   COUNTRY GRID
+   ========================================================= */
+
+.country-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 22px;
+
+}
+
+
+/* =========================================================
+   COUNTRY CARD
+   ========================================================= */
+
+.country-card {
+
+    background: #fff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    padding: 28px 20px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+
+    transition: 0.3s ease;
+
+}
+
+.country-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+
+}
+
+.country-flag {
+
+    font-size: 42px;
+
+    margin-bottom: 12px;
+
+}
+
+.country-card h3 {
+
+    font-size: 20px;
+
+    margin-bottom: 10px;
+
+}
+
+.country-card p {
+
+    color: #666;
+
+    line-height: 1.6;
+
+    min-height: 52px;
+
+}
+
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.gov-btn {
+
+    display: inline-block;
+
+    margin-top: 12px;
+
+    padding: 10px 18px;
+
+    background: #0d6efd;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+}
+
+.gov-btn:hover {
+
+    background: #084298;
+
+}
+
+
+/* =========================================================
+   INFORMATION SECTION
+   ========================================================= */
+
+.gov-info {
+
+    margin-top: 60px;
+
+    padding: 30px;
+
+    background: #f8f9fa;
+
+    border-left: 5px solid #0d6efd;
+
+    border-radius: 10px;
+
+}
+
+.gov-info h2 {
+
+    margin-top: 0;
+
+    margin-bottom: 15px;
+
+}
+
+.gov-info p {
+
+    color: #555;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================================
+   WHY SECTION
+   ========================================================= */
+
+.gov-why {
+
+    margin-top: 55px;
+
+    text-align: center;
+
+}
+
+.gov-why h2 {
+
+    margin-bottom: 30px;
+
+}
+
+.gov-why-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+
+}
+
+.gov-why-card {
+
+    background: #f8f9fa;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+}
+
+.gov-why-card h3 {
+
+    margin-bottom: 10px;
+
+}
+
+.gov-why-card p {
+
+    color: #666;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================================
+   IMPORTANT NOTE
+   ========================================================= */
+
+.gov-note {
+
+    margin-top: 45px;
+
+    padding: 25px;
+
+    background: #fff8e6;
+
+    border-left: 5px solid #f0ad00;
+
+    border-radius: 8px;
+
+}
+
+.gov-note h2 {
+
+    margin-top: 0;
+
+}
+
+.gov-note p {
+
+    color: #555;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .country-grid {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    .country-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .gov-why-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .gov-hero {
+
+        padding: 50px 15px;
+
+    }
+
+    .gov-hero h1 {
+
+        font-size: 30px;
+
+    }
+
+    .gov-hero p {
+
+        font-size: 16px;
+
+    }
+
+    .country-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+</style>
+
+<link rel="canonical" href="https://www.careerlix.com/International%20%26%20Travel/international-government-jobs/index.html">
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     NAVBAR
+     ========================================================= -->
+
+<nav>
+
+    <div class="logo">
+
+        <a href="../../index.html">
+
+            <img
+                src="../../logo.png"
+                alt="Careerlix Logo"
+            >
+
+        </a>
+
+        <span>
+            Careerlix
+        </span>
+
+    </div>
+
+
+    <ul>
+
+        <li>
+            <a href="../../index.html">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="../../jobs.html">
+                Jobs
+            </a>
+        </li>
+
+        <li>
+            <a href="../index.html">
+                International & Travel
+            </a>
+        </li>
+
+        <li>
+            <a href="../../notifications/notifications.html">
+                Notifications
+            </a>
+        </li>
+
+        <li>
+            <a href="../../legal/about.html">
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="../../legal/contact.html">
+                Contact
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+
+<section class="gov-hero">
+
+    <h1>
+        🏛️ International Government Jobs
+    </h1>
+
+    <p>
+        Explore government career opportunities across
+        major countries through Careerlix.
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     MAIN
+     ========================================================= -->
+
+<section class="gov-container">
+
+
+    <!-- INTRO -->
+
+    <div class="gov-intro">
+
+        <h2>
+            🌎 Select a Country
+        </h2>
+
+        <p>
+            Choose a country to explore its government
+            employment structure and verified public-sector
+            career opportunities.
+        </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         COUNTRY GRID
+         ===================================================== -->
+
+    <div class="country-grid">
+
+
+        <!-- 01 USA -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇺🇸
+            </div>
+
+            <h3>
+                USA
+            </h3>
+
+            <p>
+                Explore federal government
+                career opportunities in the USA.
+            </p>
+
+            <a
+                href="usa/government/federal/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 02 CANADA -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇨🇦
+            </div>
+
+            <h3>
+                Canada
+            </h3>
+
+            <p>
+                Explore federal government
+                career opportunities in Canada.
+            </p>
+
+            <a
+                href="canada/government/federal/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 03 UK -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇬🇧
+            </div>
+
+            <h3>
+                United Kingdom
+            </h3>
+
+            <p>
+                Explore central government
+                career opportunities across the UK.
+            </p>
+
+            <a
+                href="uk/government/central/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 04 AUSTRALIA -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇦🇺
+            </div>
+
+            <h3>
+                Australia
+            </h3>
+
+            <p>
+                Explore federal government
+                opportunities across Australia.
+            </p>
+
+            <a
+                href="australia/government/federal/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 05 GERMANY -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇩🇪
+            </div>
+
+            <h3>
+                Germany
+            </h3>
+
+            <p>
+                Explore federal government
+                opportunities in Germany.
+            </p>
+
+            <a
+                href="germany/government/federal/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 06 UAE -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇦🇪
+            </div>
+
+            <h3>
+                UAE
+            </h3>
+
+            <p>
+                Explore federal government
+                career opportunities in the UAE.
+            </p>
+
+            <a
+                href="uae/government/federal/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 07 SAUDI ARABIA -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇸🇦
+            </div>
+
+            <h3>
+                Saudi Arabia
+            </h3>
+
+            <p>
+                Explore national government
+                career opportunities in Saudi Arabia.
+            </p>
+
+            <a
+                href="saudi-arabia/government/national/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 08 QATAR -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇶🇦
+            </div>
+
+            <h3>
+                Qatar
+            </h3>
+
+            <p>
+                Explore national government
+                opportunities across Qatar.
+            </p>
+
+            <a
+                href="qatar/government/national/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 09 SINGAPORE -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇸🇬
+            </div>
+
+            <h3>
+                Singapore
+            </h3>
+
+            <p>
+                Explore national government
+                opportunities in Singapore.
+            </p>
+
+            <a
+                href="singapore/government/national/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 10 JAPAN -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇯🇵
+            </div>
+
+            <h3>
+                Japan
+            </h3>
+
+            <p>
+                Explore national government
+                career opportunities in Japan.
+            </p>
+
+            <a
+                href="japan/government/national/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 11 NEW ZEALAND -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇳🇿
+            </div>
+
+            <h3>
+                New Zealand
+            </h3>
+
+            <p>
+                Explore national government
+                opportunities in New Zealand.
+            </p>
+
+            <a
+                href="new-zealand/government/national/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 12 NETHERLANDS -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇳🇱
+            </div>
+
+            <h3>
+                Netherlands
+            </h3>
+
+            <p>
+                Explore national government
+                opportunities in the Netherlands.
+            </p>
+
+            <a
+                href="netherlands/government/national/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 13 IRELAND -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇮🇪
+            </div>
+
+            <h3>
+                Ireland
+            </h3>
+
+            <p>
+                Explore central government
+                opportunities across Ireland.
+            </p>
+
+            <a
+                href="ireland/government/central/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 14 SWITZERLAND -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇨🇭
+            </div>
+
+            <h3>
+                Switzerland
+            </h3>
+
+            <p>
+                Explore federal government
+                opportunities in Switzerland.
+            </p>
+
+            <a
+                href="switzerland/government/federal/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 15 SWEDEN -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇸🇪
+            </div>
+
+            <h3>
+                Sweden
+            </h3>
+
+            <p>
+                Explore national government
+                career opportunities in Sweden.
+            </p>
+
+            <a
+                href="sweden/government/national/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 16 NORWAY -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇳🇴
+            </div>
+
+            <h3>
+                Norway
+            </h3>
+
+            <p>
+                Explore national government
+                opportunities in Norway.
+            </p>
+
+            <a
+                href="norway/government/national/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 17 DENMARK -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇩🇰
+            </div>
+
+            <h3>
+                Denmark
+            </h3>
+
+            <p>
+                Explore national government
+                opportunities in Denmark.
+            </p>
+
+            <a
+                href="denmark/government/national/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 18 FINLAND -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇫🇮
+            </div>
+
+            <h3>
+                Finland
+            </h3>
+
+            <p>
+                Explore national government
+                opportunities in Finland.
+            </p>
+
+            <a
+                href="finland/government/national/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 19 FRANCE -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇫🇷
+            </div>
+
+            <h3>
+                France
+            </h3>
+
+            <p>
+                Explore central government
+                opportunities across France.
+            </p>
+
+            <a
+                href="france/government/national/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 20 ITALY -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇮🇹
+            </div>
+
+            <h3>
+                Italy
+            </h3>
+
+            <p>
+                Explore national government
+                opportunities in Italy.
+            </p>
+
+            <a
+                href="italy/government/national/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 21 SPAIN -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇪🇸
+            </div>
+
+            <h3>
+                Spain
+            </h3>
+
+            <p>
+                Explore national government
+                opportunities in Spain.
+            </p>
+
+            <a
+                href="spain/government/national/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 22 POLAND -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇵🇱
+            </div>
+
+            <h3>
+                Poland
+            </h3>
+
+            <p>
+                Explore national government
+                opportunities in Poland.
+            </p>
+
+            <a
+                href="poland/government/national/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 23 PORTUGAL -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇵🇹
+            </div>
+
+            <h3>
+                Portugal
+            </h3>
+
+            <p>
+                Explore national government
+                opportunities in Portugal.
+            </p>
+
+            <a
+                href="portugal/government/national/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 24 SOUTH KOREA -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇰🇷
+            </div>
+
+            <h3>
+                South Korea
+            </h3>
+
+            <p>
+                Explore national government
+                opportunities in South Korea.
+            </p>
+
+            <a
+                href="south-korea/government/national/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 25 MALAYSIA -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇲🇾
+            </div>
+
+            <h3>
+                Malaysia
+            </h3>
+
+            <p>
+                Explore national government
+                opportunities in Malaysia.
+            </p>
+
+            <a
+                href="malaysia/government/national/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 26 INDONESIA -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇮🇩
+            </div>
+
+            <h3>
+                Indonesia
+            </h3>
+
+            <p>
+                Explore national government
+                opportunities in Indonesia.
+            </p>
+
+            <a
+                href="indonesia/government/national/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 27 THAILAND -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇹🇭
+            </div>
+
+            <h3>
+                Thailand
+            </h3>
+
+            <p>
+                Explore national government
+                opportunities in Thailand.
+            </p>
+
+            <a
+                href="thailand/government/national/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 28 SOUTH AFRICA -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇿🇦
+            </div>
+
+            <h3>
+                South Africa
+            </h3>
+
+            <p>
+                Explore national government
+                opportunities in South Africa.
+            </p>
+
+            <a
+                href="south-africa/government/national/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 29 BAHRAIN -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇧🇭
+            </div>
+
+            <h3>
+                Bahrain
+            </h3>
+
+            <p>
+                Explore national government
+                opportunities in Bahrain.
+            </p>
+
+            <a
+                href="bahrain/government/national/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 30 KUWAIT -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇰🇼
+            </div>
+
+            <h3>
+                Kuwait
+            </h3>
+
+            <p>
+                Explore national government
+                opportunities in Kuwait.
+            </p>
+
+            <a
+                href="kuwait/government/national/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 31 OMAN -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇴🇲
+            </div>
+
+            <h3>
+                Oman
+            </h3>
+
+            <p>
+                Explore national government
+                opportunities in Oman.
+            </p>
+
+            <a
+                href="oman/government/national/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+        <!-- 32 ISRAEL -->
+
+        <div class="country-card">
+
+            <div class="country-flag">
+                🇮🇱
+            </div>
+
+            <h3>
+                Israel
+            </h3>
+
+            <p>
+                Explore national government
+                opportunities in Israel.
+            </p>
+
+            <a
+                href="israel/government/national/index.html"
+                class="gov-btn">
+
+                View Government Jobs →
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- =====================================================
+         WHY GOVERNMENT JOBS
+         ===================================================== -->
+
+    <div class="gov-why">
+
+        <h2>
+            Why Explore International Government Jobs?
+        </h2>
+
+
+        <div class="gov-why-grid">
+
+
+            <div class="gov-why-card">
+
+                <h3>
+                    🌎 Global Opportunities
+                </h3>
+
+                <p>
+                    Explore public-sector career opportunities
+                    across different countries and government
+                    systems.
+                </p>
+
+            </div>
+
+
+            <div class="gov-why-card">
+
+                <h3>
+                    🏛️ Government Employers
+                </h3>
+
+                <p>
+                    Find government departments, agencies and
+                    public-sector organizations in different
+                    international markets.
+                </p>
+
+            </div>
+
+
+            <div class="gov-why-card">
+
+                <h3>
+                    🔎 Verified Sources
+                </h3>
+
+                <p>
+                    Careerlix focuses on directing applicants
+                    toward official government recruitment
+                    sources.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         INFORMATION
+         ===================================================== -->
+
+    <div class="gov-info">
+
+        <h2>
+            📌 About International Government Jobs
+        </h2>
+
+        <p>
+            Careerlix organizes international government
+            employment opportunities by country to make it
+            easier for job seekers to explore public-sector
+            career options around the world.
+        </p>
+
+        <p>
+            Each country page can contain information about
+            the relevant government employment structure,
+            official recruitment portals, eligibility and
+            available vacancies.
+        </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         IMPORTANT NOTE
+         ===================================================== -->
+
+    <div class="gov-note">
+
+        <h2>
+            ⚠️ Important Information
+        </h2>
+
+        <p>
+            Government employment rules, nationality
+            requirements, work authorization, security
+            requirements and application procedures vary
+            by country and position.
+        </p>
+
+        <p>
+            Always verify the vacancy and application
+            requirements through the official government
+            recruitment source before applying.
+        </p>
+
+        <p>
+            Careerlix does not guarantee employment,
+            selection, visa approval or relocation.
+        </p>
+
+    </div>
+
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer>
+
+    <p>
+
+        <a href="../../legal/about.html">
+            About Us
+        </a>
+
+        |
+
+        <a href="../../legal/contact.html">
+            Contact Us
+        </a>
+
+        |
+
+        <a href="../../legal/privacy-policy.html">
+            Privacy Policy
+        </a>
+
+        |
+
+        <a href="../../legal/disclaimer.html">
+            Disclaimer
+        </a>
+
+        |
+
+        <a href="../../legal/terms-and-conditions.html">
+            Terms & Conditions
+        </a>
+
+    </p>
+
+
+    <p>
+        Your Gateway to Opportunities
+    </p>
+
+
+    <p>
+        © 2026 Careerlix. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

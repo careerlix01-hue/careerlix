@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Passport Apply - Careerlix</title>
+
+<meta name="description"
+content="Indian Passport application, appointment, application tracking, Tatkaal Passport, PCC and other Passport Seva services.">
+
+<link rel="stylesheet" href="../../style.css">
+
+<link rel="icon" href="../../logo.png">
+
+<style>
+
+/* =========================================================
+   PASSPORT PAGE
+========================================================= */
+
+.passport-page {
+    background: #ffffff;
+    color: #111111;
+}
+
+
+/* =========================================================
+   TOP QUICK SERVICE CARDS
+========================================================= */
+
+.passport-top-services {
+
+    max-width: 1450px;
+
+    margin: 0 auto;
+
+    padding: 20px 25px 55px;
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 55px;
+
+}
+
+.passport-top-card {
+
+    min-height: 120px;
+
+    background: #fff1c9;
+
+    border-radius: 15px;
+
+    padding: 18px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    text-decoration: none;
+
+    color: #111111;
+
+    font-size: 19px;
+
+    line-height: 1.25;
+
+    transition: 0.25s ease;
+
+}
+
+.passport-top-card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+
+}
+
+.passport-top-icon {
+
+    width: 50px;
+
+    min-width: 50px;
+
+    text-align: center;
+
+    font-size: 40px;
+
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.passport-divider {
+
+    border: 0;
+
+    border-top: 1px solid #cccccc;
+
+    max-width: 1600px;
+
+    margin: 0 auto;
+
+}
+
+
+/* =========================================================
+   SERVICES SECTION
+========================================================= */
+
+.passport-services {
+
+    max-width: 1450px;
+
+    margin: 0 auto;
+
+    padding: 38px 25px 45px;
+
+}
+
+.passport-services-title {
+
+    text-align: center;
+
+    font-size: 38px;
+
+    margin: 0 0 55px;
+
+    color: #050505;
+
+}
+
+
+/* =========================================================
+   SERVICE GRID
+========================================================= */
+
+.passport-service-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    column-gap: 60px;
+
+    row-gap: 5px;
+
+}
+
+
+/* =========================================================
+   SERVICE ITEM
+========================================================= */
+
+.passport-service-item {
+
+    min-height: 275px;
+
+    padding: 5px 10px 30px;
+
+    margin-bottom: 40px;
+
+    border-bottom: 3px solid #171b70;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    color: #111111;
+
+    transition: 0.25s ease;
+
+}
+
+.passport-service-item:hover {
+
+    transform: translateY(-4px);
+
+}
+
+.passport-service-icon {
+
+    height: 105px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 58px;
+
+    margin-bottom: 20px;
+
+}
+
+.passport-service-item h3 {
+
+    margin: 0;
+
+    font-size: 22px;
+
+    font-weight: 400;
+
+    line-height: 1.45;
+
+}
+
+
+/* =========================================================
+   ONLINE SERVICES
+========================================================= */
+
+.passport-online {
+
+    max-width: 1200px;
+
+    margin: 15px auto 70px;
+
+    padding: 0 25px;
+
+}
+
+.passport-online h2 {
+
+    text-align: center;
+
+    font-size: 32px;
+
+    margin-bottom: 30px;
+
+}
+
+.passport-online-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+.passport-online-card {
+
+    background: #f7f9fc;
+
+    border: 1px solid #e1e5eb;
+
+    border-radius: 14px;
+
+    padding: 25px;
+
+    text-align: center;
+
+}
+
+.passport-online-card h3 {
+
+    margin-top: 0;
+
+    font-size: 21px;
+
+}
+
+.passport-online-card p {
+
+    color: #555555;
+
+    line-height: 1.6;
+
+    min-height: 70px;
+
+}
+
+.passport-button {
+
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    background: #0d6efd;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    font-weight: 700;
+
+}
+
+.passport-button:hover {
+
+    background: #084298;
+
+}
+
+
+/* =========================================================
+   IMPORTANT INFORMATION
+========================================================= */
+
+.passport-info {
+
+    max-width: 1200px;
+
+    margin: 0 auto 60px;
+
+    padding: 0 25px;
+
+}
+
+.passport-info-box {
+
+    background: #fff8e6;
+
+    border-left: 5px solid #f0ad00;
+
+    border-radius: 10px;
+
+    padding: 25px;
+
+}
+
+.passport-info-box h2 {
+
+    margin-top: 0;
+
+}
+
+.passport-info-box p {
+
+    color: #555555;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .passport-top-services {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 20px;
+
+    }
+
+    .passport-service-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        column-gap: 35px;
+
+    }
+
+    .passport-online-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .passport-top-services {
+
+        grid-template-columns: 1fr;
+
+        padding-left: 15px;
+
+        padding-right: 15px;
+
+    }
+
+    .passport-top-card {
+
+        min-height: 100px;
+
+    }
+
+    .passport-services {
+
+        padding-left: 15px;
+
+        padding-right: 15px;
+
+    }
+
+    .passport-services-title {
+
+        font-size: 29px;
+
+        margin-bottom: 35px;
+
+    }
+
+    .passport-service-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .passport-online-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+</style>
+
+<link rel="canonical" href="https://www.careerlix.com/International%20%26%20Travel/passport-apply/index.html">
+</head>
+
+
+<body class="passport-page">
+
+
+<!-- =====================================================
+     NAVBAR
+====================================================== -->
+
+<nav>
+
+    <div class="logo">
+
+        <a href="../../index.html">
+
+            <img
+                src="../../logo.png"
+                alt="Careerlix Logo">
+
+        </a>
+
+        <span>
+            Careerlix
+        </span>
+
+    </div>
+
+
+    <ul>
+
+        <li>
+            <a href="../../index.html">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="../../jobs.html">
+                Jobs
+            </a>
+        </li>
+
+        <li>
+            <a href="../index.html">
+                International &amp; Travel
+            </a>
+        </li>
+
+        <li>
+            <a href="../../notifications/notifications.html">
+                Notifications
+            </a>
+        </li>
+
+        <li>
+            <a href="../../legal/about.html">
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="../../legal/contact.html">
+                Contact
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+<!-- =====================================================
+     TOP QUICK LINKS
+====================================================== -->
+
+<section class="passport-top-services">
+
+
+    <!-- APPLY FOR PASSPORT -->
+
+    <a
+        class="passport-top-card"
+        href="https://www.passportindia.gov.in/"
+        target="_blank"
+        rel="noopener noreferrer">
+
+        <span class="passport-top-icon">
+            🛂
+        </span>
+
+        <span>
+            Apply For<br>
+            Passport
+        </span>
+
+    </a>
+
+
+    <!-- APPOINTMENT -->
+
+    <a
+        class="passport-top-card"
+        href="https://services1.passportindia.gov.in/psp/Appointment"
+        target="_blank"
+        rel="noopener noreferrer">
+
+        <span class="passport-top-icon">
+            📅
+        </span>
+
+        <span>
+            Check<br>
+            Appointment<br>
+            Availability
+        </span>
+
+    </a>
+
+
+    <!-- TRACK APPLICATION -->
+
+    <a
+        class="passport-top-card"
+        href="https://www.passportindia.gov.in/"
+        target="_blank"
+        rel="noopener noreferrer">
+
+        <span class="passport-top-icon">
+            🔎
+        </span>
+
+        <span>
+            Track Passport<br>
+            Application
+        </span>
+
+    </a>
+
+
+    <!-- FEEDBACK -->
+
+    <a
+        class="passport-top-card"
+        href="https://www.passportindia.gov.in/"
+        target="_blank"
+        rel="noopener noreferrer">
+
+        <span class="passport-top-icon">
+            📝
+        </span>
+
+        <span>
+            Register<br>
+            Feedback /<br>
+            Grievance
+        </span>
+
+    </a>
+
+
+    <!-- MISC SERVICES -->
+
+    <a
+        class="passport-top-card"
+        href="https://www.passportindia.gov.in/"
+        target="_blank"
+        rel="noopener noreferrer">
+
+        <span class="passport-top-icon">
+            ℹ️
+        </span>
+
+        <span>
+            Know About Our<br>
+            Miscellaneous<br>
+            Services
+        </span>
+
+    </a>
+
+
+</section>
+
+
+<hr class="passport-divider">
+
+
+<!-- =====================================================
+     KNOW ABOUT OUR SERVICES
+====================================================== -->
+
+<section class="passport-services">
+
+
+    <h1 class="passport-services-title">
+        Know About Our Services
+    </h1>
+
+
+    <div class="passport-service-grid">
+
+
+        <!-- 1. FRESH / REISSUE -->
+
+        <a
+            class="passport-service-item"
+            href="https://www.passportindia.gov.in/psp/applyFor"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            <div class="passport-service-icon">
+                🛂
+            </div>
+
+            <h3>
+                Fresh / Re-issue<br>
+                Ordinary Passport
+            </h3>
+
+        </a>
+
+
+        <!-- 2. TATKAAL -->
+
+        <a
+            class="passport-service-item"
+            href="https://www.passportindia.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            <div class="passport-service-icon">
+                ⚡
+            </div>
+
+            <h3>
+                Tatkaal Passport
+            </h3>
+
+        </a>
+
+
+        <!-- 3. DIPLOMATIC / OFFICIAL -->
+
+        <a
+            class="passport-service-item"
+            href="https://www.passportindia.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            <div class="passport-service-icon">
+                🎫
+            </div>
+
+            <h3>
+                Diplomatic / Official<br>
+                Passport
+            </h3>
+
+        </a>
+
+
+        <!-- 4. PCC -->
+
+        <a
+            class="passport-service-item"
+            href="https://www.passportindia.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            <div class="passport-service-icon">
+                👮
+            </div>
+
+            <h3>
+                Police Clearance<br>
+                Certificate
+            </h3>
+
+        </a>
+
+
+        <!-- 5. IDENTITY / SURRENDER -->
+
+        <a
+            class="passport-service-item"
+            href="https://www.passportindia.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            <div class="passport-service-icon">
+                📜
+            </div>
+
+            <h3>
+                Identity Certificate (IC) /<br>
+                Passport Surrender Certificate
+            </h3>
+
+        </a>
+
+
+        <!-- 6. LOC -->
+
+        <a
+            class="passport-service-item"
+            href="https://www.passportindia.gov.in/psp/ApplyLOC"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            <div class="passport-service-icon">
+                🚧
+            </div>
+
+            <h3>
+                Line of Control (LoC)<br>
+                Permit
+            </h3>
+
+        </a>
+
+
+        <!-- 7. ACT AND RULES -->
+
+        <a
+            class="passport-service-item"
+            href="https://www.passportindia.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            <div class="passport-service-icon">
+                📜
+            </div>
+
+            <h3>
+                Passport Act and Rules
+            </h3>
+
+        </a>
+
+
+        <!-- 8. ANNEXURES -->
+
+        <a
+            class="passport-service-item"
+            href="https://www.passportindia.gov.in/psp/applyFor"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            <div class="passport-service-icon">
+                📋
+            </div>
+
+            <h3>
+                Annexures and<br>
+                Affidavits
+            </h3>
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ONLINE SERVICES
+====================================================== -->
+
+<section class="passport-online">
+
+
+    <h2>
+        Passport Online Services
+    </h2>
+
+
+    <div class="passport-online-grid">
+
+
+        <!-- APPLY -->
+
+        <div class="passport-online-card">
+
+            <h3>
+                🛂 Apply for Passport
+            </h3>
+
+            <p>
+                Open the official Government of India
+                Passport Seva portal to register or login
+                and start your application.
+            </p>
+
+            <a
+                class="passport-button"
+                href="https://www.passportindia.gov.in/"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                Apply Now →
+
+            </a>
+
+        </div>
+
+
+        <!-- FRESH / REISSUE GUIDE -->
+
+        <div class="passport-online-card">
+
+            <h3>
+                🔄 Fresh / Re-issue Guide
+            </h3>
+
+            <p>
+                Read the official step-by-step process for
+                Fresh or Re-issue Ordinary Passport.
+            </p>
+
+            <a
+                class="passport-button"
+                href="https://www.passportindia.gov.in/psp/applyFor"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                View Guide →
+
+            </a>
+
+        </div>
+
+
+        <!-- APPOINTMENT -->
+
+        <div class="passport-online-card">
+
+            <h3>
+                📅 Appointment
+            </h3>
+
+            <p>
+                Check official appointment information
+                and appointment opening details.
+            </p>
+
+            <a
+                class="passport-button"
+                href="https://services1.passportindia.gov.in/psp/Appointment"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                Check Appointment →
+
+            </a>
+
+        </div>
+
+
+        <!-- TRACK -->
+
+        <div class="passport-online-card">
+
+            <h3>
+                🔎 Track Application
+            </h3>
+
+            <p>
+                Track your Passport or PCC application
+                through the official Passport Seva portal.
+            </p>
+
+            <a
+                class="passport-button"
+                href="https://www.passportindia.gov.in/"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                Track Application →
+
+            </a>
+
+        </div>
+
+
+        <!-- TATKAAL -->
+
+        <div class="passport-online-card">
+
+            <h3>
+                ⚡ Tatkaal Passport
+            </h3>
+
+            <p>
+                Check the official Tatkaal information,
+                eligibility and application process.
+            </p>
+
+            <a
+                class="passport-button"
+                href="https://www.passportindia.gov.in/"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                Tatkaal Information →
+
+            </a>
+
+        </div>
+
+
+        <!-- PCC -->
+
+        <div class="passport-online-card">
+
+            <h3>
+                👮 Police Clearance Certificate
+            </h3>
+
+            <p>
+                Open the official Passport Seva portal
+                for Police Clearance Certificate services.
+            </p>
+
+            <a
+                class="passport-button"
+                href="https://www.passportindia.gov.in/"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                PCC Service →
+
+            </a>
+
+        </div>
+
+
+        <!-- LOC -->
+
+        <div class="passport-online-card">
+
+            <h3>
+                🚧 LoC Permit
+            </h3>
+
+            <p>
+                View the official guide for applying
+                for a Line of Control Permit.
+            </p>
+
+            <a
+                class="passport-button"
+                href="https://www.passportindia.gov.in/psp/ApplyLOC"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                LoC Permit →
+
+            </a>
+
+        </div>
+
+
+        <!-- FEES -->
+
+        <div class="passport-online-card">
+
+            <h3>
+                💰 Passport Fees
+            </h3>
+
+            <p>
+                Check the official Passport Seva fee
+                structure before making payment.
+            </p>
+
+            <a
+                class="passport-button"
+                href="https://www.passportindia.gov.in/psp/onlineHtml/feeDocument"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                Check Fees →
+
+            </a>
+
+        </div>
+
+
+        <!-- OFFICIAL PORTAL -->
+
+        <div class="passport-online-card">
+
+            <h3>
+                🇮🇳 Official Passport Seva
+            </h3>
+
+            <p>
+                Open the official Passport Seva website
+                of the Ministry of External Affairs.
+            </p>
+
+            <a
+                class="passport-button"
+                href="https://www.passportindia.gov.in/"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                Open Official Portal →
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     IMPORTANT INFORMATION
+====================================================== -->
+
+<section class="passport-info">
+
+    <div class="passport-info-box">
+
+        <h2>
+            ⚠️ Important Information
+        </h2>
+
+        <p>
+            Careerlix is an information and navigation
+            platform. Passport applications, appointments,
+            payments and submission of personal information
+            should be completed only through official
+            Government of India Passport Seva resources.
+        </p>
+
+        <p>
+            Always verify the latest eligibility,
+            documents, fees and appointment information
+            on the official Passport Seva portal before
+            applying.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+    <p>
+
+        <a href="../../legal/about.html">
+            About Us
+        </a>
+
+        |
+
+        <a href="../../legal/contact.html">
+            Contact Us
+        </a>
+
+        |
+
+        <a href="../../legal/privacy-policy.html">
+            Privacy Policy
+        </a>
+
+        |
+
+        <a href="../../legal/disclaimer.html">
+            Disclaimer
+        </a>
+
+        |
+
+        <a href="../../legal/terms-and-conditions.html">
+            Terms &amp; Conditions
+        </a>
+
+    </p>
+
+
+    <p>
+        Your Gateway to Opportunities
+    </p>
+
+
+    <p>
+        © 2026 Careerlix. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

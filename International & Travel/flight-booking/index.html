@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Flight Booking - Careerlix</title>
+
+<meta name="description"
+content="Find official airline flight booking, flight status, web check-in, manage booking and travel information through Careerlix.">
+
+<link rel="stylesheet" href="../../style.css">
+
+<link rel="icon" href="../../logo.png">
+
+
+<style>
+
+/* =====================================================
+   FLIGHT BOOKING PAGE
+===================================================== */
+
+.flight-page {
+    background: #ffffff;
+    color: #111111;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.flight-hero {
+
+    background: linear-gradient(135deg, #0d6efd, #063b8f);
+
+    color: #ffffff;
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+}
+
+.flight-hero h1 {
+
+    margin: 0 0 15px;
+
+    font-size: 44px;
+
+}
+
+.flight-hero p {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =====================================================
+   MAIN CONTAINER
+===================================================== */
+
+.flight-container {
+
+    max-width: 1250px;
+
+    margin: 50px auto;
+
+    padding: 0 20px;
+
+}
+
+
+/* =====================================================
+   INTRO
+===================================================== */
+
+.flight-intro {
+
+    text-align: center;
+
+    margin-bottom: 45px;
+
+}
+
+.flight-intro h2 {
+
+    font-size: 32px;
+
+    margin-bottom: 12px;
+
+}
+
+.flight-intro p {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    color: #555555;
+
+    line-height: 1.7;
+
+}
+
+
+/* =====================================================
+   AIRLINE GRID
+===================================================== */
+
+.airline-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-bottom: 55px;
+
+}
+
+
+/* =====================================================
+   AIRLINE CARD
+===================================================== */
+
+.airline-card {
+
+    background: #ffffff;
+
+    border: 1px solid #e3e7ed;
+
+    border-radius: 16px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    box-shadow: 0 7px 25px rgba(0,0,0,0.07);
+
+    transition: 0.25s ease;
+
+}
+
+.airline-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+
+}
+
+.airline-logo {
+
+    font-size: 52px;
+
+    margin-bottom: 12px;
+
+}
+
+.airline-card h3 {
+
+    font-size: 25px;
+
+    margin: 0 0 12px;
+
+}
+
+.airline-card p {
+
+    color: #666666;
+
+    line-height: 1.7;
+
+    min-height: 75px;
+
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.flight-btn {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 12px 23px;
+
+    background: #0d6efd;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    font-weight: 700;
+
+    transition: 0.25s ease;
+
+}
+
+.flight-btn:hover {
+
+    background: #084298;
+
+}
+
+
+/* =====================================================
+   SERVICES
+===================================================== */
+
+.flight-services {
+
+    margin-top: 20px;
+
+}
+
+.flight-services h2 {
+
+    text-align: center;
+
+    font-size: 32px;
+
+    margin-bottom: 30px;
+
+}
+
+.flight-service-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+
+}
+
+.flight-service-card {
+
+    background: #f7f9fc;
+
+    border: 1px solid #e1e5eb;
+
+    border-radius: 14px;
+
+    padding: 25px;
+
+    text-align: center;
+
+}
+
+.flight-service-icon {
+
+    font-size: 42px;
+
+    margin-bottom: 10px;
+
+}
+
+.flight-service-card h3 {
+
+    font-size: 21px;
+
+    margin-bottom: 10px;
+
+}
+
+.flight-service-card p {
+
+    color: #666666;
+
+    line-height: 1.6;
+
+}
+
+
+/* =====================================================
+   INFORMATION
+===================================================== */
+
+.flight-info {
+
+    margin-top: 55px;
+
+    background: #eef6ff;
+
+    border-left: 5px solid #0d6efd;
+
+    border-radius: 10px;
+
+    padding: 28px;
+
+}
+
+.flight-info h2 {
+
+    margin-top: 0;
+
+}
+
+.flight-info p {
+
+    color: #555555;
+
+    line-height: 1.8;
+
+}
+
+
+/* =====================================================
+   SAFETY
+===================================================== */
+
+.flight-safety {
+
+    margin-top: 35px;
+
+    background: #fff8e6;
+
+    border-left: 5px solid #f0ad00;
+
+    border-radius: 10px;
+
+    padding: 28px;
+
+}
+
+.flight-safety h2 {
+
+    margin-top: 0;
+
+}
+
+.flight-safety ul {
+
+    padding-left: 22px;
+
+}
+
+.flight-safety li {
+
+    margin-bottom: 10px;
+
+    color: #555555;
+
+    line-height: 1.6;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .airline-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .flight-service-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .flight-hero {
+
+        padding: 55px 15px;
+
+    }
+
+    .flight-hero h1 {
+
+        font-size: 32px;
+
+    }
+
+    .flight-hero p {
+
+        font-size: 16px;
+
+    }
+
+    .flight-container {
+
+        padding: 0 15px;
+
+    }
+
+    .flight-service-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+</style>
+
+<link rel="canonical" href="https://www.careerlix.com/International%20%26%20Travel/flight-booking/index.html">
+</head>
+
+
+<body class="flight-page">
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<nav>
+
+    <div class="logo">
+
+        <a href="../../index.html">
+
+            <img
+                src="../../logo.png"
+                alt="Careerlix Logo">
+
+        </a>
+
+        <span>
+            Careerlix
+        </span>
+
+    </div>
+
+
+    <ul>
+
+        <li>
+            <a href="../../index.html">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="../../jobs.html">
+                Jobs
+            </a>
+        </li>
+
+        <li>
+            <a href="../index.html">
+                International &amp; Travel
+            </a>
+        </li>
+
+        <li>
+            <a href="../../notifications/notifications.html">
+                Notifications
+            </a>
+        </li>
+
+        <li>
+            <a href="../../legal/about.html">
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="../../legal/contact.html">
+                Contact
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="flight-hero">
+
+    <h1>
+        ✈️ Flight Booking
+    </h1>
+
+    <p>
+        Book flights through official airline websites,
+        check flight status, manage bookings and complete
+        web check-in for your journey.
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main class="flight-container">
+
+
+    <section class="flight-intro">
+
+        <h2>
+            Book Your Flight
+        </h2>
+
+        <p>
+            Choose an airline below to visit its official
+            website for flight booking, fares, schedules
+            and other travel services.
+        </p>
+
+    </section>
+
+
+    <!-- =================================================
+         AIRLINES
+    ================================================== -->
+
+    <section class="airline-grid">
+
+
+        <!-- AIR INDIA -->
+
+        <article class="airline-card">
+
+            <div class="airline-logo">
+                🇮🇳
+            </div>
+
+            <h3>
+                Air India
+            </h3>
+
+            <p>
+                Book domestic and international flights
+                directly through the official Air India
+                website.
+            </p>
+
+            <a
+                href="https://www.airindia.com/en-in/book-flights/"
+                class="flight-btn"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                Book Air India Flight →
+
+            </a>
+
+        </article>
+
+
+        <!-- INDIGO -->
+
+        <article class="airline-card">
+
+            <div class="airline-logo">
+                🔵
+            </div>
+
+            <h3>
+                IndiGo
+            </h3>
+
+            <p>
+                Search and book domestic or international
+                flights through the official IndiGo website.
+            </p>
+
+            <a
+                href="https://www.goindigo.in/flights"
+                class="flight-btn"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                Book IndiGo Flight →
+
+            </a>
+
+        </article>
+
+
+        <!-- SPICEJET -->
+
+        <article class="airline-card">
+
+            <div class="airline-logo">
+                ✈️
+            </div>
+
+            <h3>
+                SpiceJet
+            </h3>
+
+            <p>
+                Book flights and access official SpiceJet
+                flight status, check-in and booking services.
+            </p>
+
+            <a
+                href="https://book.spicejet.com/"
+                class="flight-btn"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                Book SpiceJet Flight →
+
+            </a>
+
+        </article>
+
+
+        <!-- AKASA AIR -->
+
+        <article class="airline-card">
+
+            <div class="airline-logo">
+                🟠
+            </div>
+
+            <h3>
+                Akasa Air
+            </h3>
+
+            <p>
+                Book Akasa Air flights directly through
+                the official airline booking website.
+            </p>
+
+            <a
+                href="https://www.akasaair.com/flight-booking"
+                class="flight-btn"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                Book Akasa Flight →
+
+            </a>
+
+        </article>
+
+
+    </section>
+
+
+    <!-- =================================================
+         FLIGHT SERVICES
+    ================================================== -->
+
+    <section class="flight-services">
+
+
+        <h2>
+            Flight Services
+        </h2>
+
+
+        <div class="flight-service-grid">
+
+
+            <!-- AIR INDIA STATUS -->
+
+            <div class="flight-service-card">
+
+                <div class="flight-service-icon">
+                    🔎
+                </div>
+
+                <h3>
+                    Flight Status
+                </h3>
+
+                <p>
+                    Check your flight status and schedule
+                    directly through the airline website.
+                </p>
+
+                <a
+                    href="https://www.airindia.com/en-in/flight-status"
+                    class="flight-btn"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    Check Status →
+
+                </a>
+
+            </div>
+
+
+            <!-- AIR INDIA CHECK IN -->
+
+            <div class="flight-service-card">
+
+                <div class="flight-service-icon">
+                    🎫
+                </div>
+
+                <h3>
+                    Web Check-in
+                </h3>
+
+                <p>
+                    Complete online check-in before your
+                    flight through the official airline service.
+                </p>
+
+                <a
+                    href="https://www.airindia.com/en-in/check-in"
+                    class="flight-btn"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    Web Check-in →
+
+                </a>
+
+            </div>
+
+
+            <!-- AIR INDIA MANAGE -->
+
+            <div class="flight-service-card">
+
+                <div class="flight-service-icon">
+                    📋
+                </div>
+
+                <h3>
+                    Manage Booking
+                </h3>
+
+                <p>
+                    Retrieve or manage an existing Air India
+                    booking through the official website.
+                </p>
+
+                <a
+                    href="https://www.airindia.com/en-in/manage-booking"
+                    class="flight-btn"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    Manage Booking →
+
+                </a>
+
+            </div>
+
+
+            <!-- INDIGO STATUS -->
+
+            <div class="flight-service-card">
+
+                <div class="flight-service-icon">
+                    🛫
+                </div>
+
+                <h3>
+                    IndiGo Flight Status
+                </h3>
+
+                <p>
+                    Check the current status of an IndiGo
+                    flight using the official website.
+                </p>
+
+                <a
+                    href="https://www.goindigo.in/flight-status"
+                    class="flight-btn"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    Check IndiGo Status →
+
+                </a>
+
+            </div>
+
+
+            <!-- INDIGO MANAGE -->
+
+            <div class="flight-service-card">
+
+                <div class="flight-service-icon">
+                    🧾
+                </div>
+
+                <h3>
+                    IndiGo Manage Booking
+                </h3>
+
+                <p>
+                    View or edit your IndiGo booking and
+                    access available booking services.
+                </p>
+
+                <a
+                    href="https://www.goindigo.in/plan-your-travel.html"
+                    class="flight-btn"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    Manage IndiGo Booking →
+
+                </a>
+
+            </div>
+
+
+            <!-- SPICEJET -->
+
+            <div class="flight-service-card">
+
+                <div class="flight-service-icon">
+                    🧳
+                </div>
+
+                <h3>
+                    SpiceJet Services
+                </h3>
+
+                <p>
+                    Access booking, manage booking, web
+                    check-in and flight status services.
+                </p>
+
+                <a
+                    href="https://book.spicejet.com/"
+                    class="flight-btn"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    Open SpiceJet →
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         INFORMATION
+    ================================================== -->
+
+    <section class="flight-info">
+
+        <h2>
+            ✈️ Before Booking Your Flight
+        </h2>
+
+        <p>
+            Compare the available flight timings, baggage
+            allowance, fare conditions and cancellation
+            rules before making your payment.
+        </p>
+
+        <p>
+            Flight fares and availability can change at any
+            time. Always confirm the final fare and booking
+            conditions on the airline's official website
+            before payment.
+        </p>
+
+    </section>
+
+
+    <!-- =================================================
+         SAFETY
+    ================================================== -->
+
+    <section class="flight-safety">
+
+        <h2>
+            ⚠️ Flight Booking Safety
+        </h2>
+
+        <ul>
+
+            <li>
+                Use the airline's official website whenever
+                possible for direct booking.
+            </li>
+
+            <li>
+                Check the website address carefully before
+                entering personal or payment information.
+            </li>
+
+            <li>
+                Verify passenger names, travel dates,
+                airports and baggage allowance before payment.
+            </li>
+
+            <li>
+                Keep your booking confirmation and
+                PNR/e-ticket information safe.
+            </li>
+
+            <li>
+                Check cancellation, refund and rescheduling
+                rules before completing the booking.
+            </li>
+
+        </ul>
+
+    </section>
+
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <p>
+
+        <a href="../../legal/about.html">
+            About Us
+        </a>
+
+        |
+
+        <a href="../../legal/contact.html">
+            Contact Us
+        </a>
+
+        |
+
+        <a href="../../legal/privacy-policy.html">
+            Privacy Policy
+        </a>
+
+        |
+
+        <a href="../../legal/disclaimer.html">
+            Disclaimer
+        </a>
+
+        |
+
+        <a href="../../legal/terms-and-conditions.html">
+            Terms &amp; Conditions
+        </a>
+
+    </p>
+
+
+    <p>
+        Your Gateway to Opportunities
+    </p>
+
+
+    <p>
+        © 2026 Careerlix. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
